@@ -50,7 +50,7 @@ const calculator = {
 
   addText(value) {
     if (this.displayText.length === 10) {
-      document.querySelector(".screen").value = "Owie Stop!";
+      document.querySelector(".screen").value = "Stop! Too long!";
     } else {
       if (this.displayText === "0") {
         this.displayText = "";
@@ -88,7 +88,7 @@ const calculator = {
       if (isFinite(result)) {
         this.outputText(result);
       } else {
-        this.outputText("oh no :0");
+        this.outputText("You done broke it >:(");
       }
     }
   },
